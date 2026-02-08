@@ -1,0 +1,141 @@
+# Audio Analyzer Configuration
+
+# Audio Settings
+audio:
+  sample_rate: 96000  # Hz - Must be 2x highest frequency you want to detect
+  buffer_size: 2048   # Samples per buffer
+  channels: 1         # Mono
+  dtype: 'float32'
+
+# Frequency Ranges
+frequency_ranges:
+  infrasound:
+    min: 0.01   # Hz
+    max: 20     # Hz
+  audible:
+    min: 20     # Hz
+    max: 20000  # Hz
+  ultrasound:
+    min: 20000  # Hz
+    max: 48000  # Hz (limited by sample_rate/2)
+
+# Detection Thresholds
+detection:
+  infrasound:
+    threshold_db: -40      # dB threshold
+    min_duration: 0.5      # seconds
+    frequency_tolerance: 2  # Hz
+  ultrasound:
+    threshold_db: -50      # dB threshold
+    min_duration: 0.05     # seconds
+    frequency_tolerance: 1000  # Hz
+
+# Signal Processing
+signal_processing:
+  # Filtering
+  highpass_cutoff: 0.01  # Hz - Remove DC offset
+  lowpass_cutoff: null   # Hz - Set based on hardware limits
+  
+  # FFT Settings
+  fft_size: 4096
+  hop_length: 1024
+  window: 'hann'
+  
+  # Spectrogram
+  n_mels: 128
+  f_min: 0
+  f_max: null  # Uses sample_rate/2
+  
+  # Noise Reduction
+  noise_reduce: true
+  noise_profile_duration: 1.0  # seconds
+
+# Machine Learning
+ml_detection:
+  enabled: true
+  model_path: 'data/models/detector.h5'
+  confidence_threshold: 0.75
+  features:
+    - 'spectral_centroid'
+    - 'spectral_rolloff'
+    - 'zero_crossing_rate'
+    - 'mfcc'
+    - 'chroma'
+
+# Visualization
+visualization:
+  spectrogram:
+    cmap: 'viridis'
+    dpi: 100
+    figsize: [12, 6]
+  
+  waveform:
+    color: 'blue'
+    alpha: 0.7
+  
+  save_plots: true
+  show_plots: false
+  output_format: 'png'
+
+# Recording
+recording:
+  auto_save: true
+  save_path: 'data/recordings/'
+  file_format: 'wav'
+  bit_depth: 24
+  
+  # Trigger recording on detection
+  trigger_recording: true
+  pre_trigger_duration: 1.0   # seconds
+  post_trigger_duration: 2.0  # seconds
+
+# Output
+output:
+  directory: 'results/'
+  
+  # Export formats
+  export_csv: true
+  export_json: true
+  export_audio: true
+  
+  # Metadata
+  include_metadata: true
+  include_timestamps: true
+  include_frequency_data: true
+
+# Real-time Monitoring
+realtime:
+  display_interval: 0.1  # seconds
+  update_plots: true
+  console_output: true
+  
+  # Alerts
+  alerts_enabled: true
+  alert_threshold_db: -30
+  alert_sound: true
+
+# Performance
+performance:
+  num_threads: 4
+  use_gpu: false  # Enable if TensorFlow GPU is available
+  max_memory_mb: 2048
+  
+# Logging
+logging:
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  file: 'logs/analyzer.log'
+  console: true
+  
+# Advanced
+advanced:
+  # Wavelet transform settings
+  wavelet_family: 'db4'
+  wavelet_level: 5
+  
+  # Quality metrics
+  calculate_snr: true
+  calculate_thd: true
+  
+  # Calibration
+  calibration_file: null  # Path to calibration data
+  apply_calibration: false
