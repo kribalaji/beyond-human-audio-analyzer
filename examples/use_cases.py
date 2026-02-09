@@ -44,8 +44,10 @@ def example_1_bat_detection():
     bat_signal = 0.8 * chirp + noise
     
     # Save and analyze
-    test_file = '/home/claude/data/samples/bat_call_synthetic.wav'
-    save_audio(bat_signal, sample_rate, test_file)
+    test_dir = Path('data/samples')
+    test_dir.mkdir(parents=True, exist_ok=True)
+    test_file = test_dir / 'bat_call_synthetic.wav'
+    save_audio(bat_signal, sample_rate, str(test_file))
     
     print(f"\nGenerated synthetic bat call: {test_file}")
     print("Analyzing for ultrasound...")
@@ -60,12 +62,12 @@ def example_1_bat_detection():
         print(f"  - {event['frequency_hz']/1000:.1f} kHz @ {event['magnitude_db']:.1f} dB")
     
     # Visualize
-    audio, sr = analyzer.load_audio(test_file, target_sr=sample_rate)
+    audio, sr = analyzer.load_audio(str(test_file), target_sr=sample_rate)
     analyzer.visualize_spectrogram(
         audio,
         title="Bat Echolocation Call - Spectrogram",
         freq_range=(20000, 100000),
-        save_path='/home/claude/data/samples/bat_spectrogram.png'
+        save_path=str(test_dir / 'bat_spectrogram.png')
     )
 
 
@@ -98,13 +100,15 @@ def example_2_machinery_monitoring():
     machinery_signal = normal_signal + abnormal_signal + 0.05 * np.random.randn(len(t))
     
     # Save and analyze
-    test_file = '/home/claude/data/samples/machinery_vibration.wav'
-    save_audio(machinery_signal, sample_rate, test_file)
+    test_dir = Path('data/samples')
+    test_dir.mkdir(parents=True, exist_ok=True)
+    test_file = test_dir / 'machinery_vibration.wav'
+    save_audio(machinery_signal, sample_rate, str(test_file))
     
     print(f"\nGenerated machinery signal: {test_file}")
     print("Analyzing for infrasound...")
     
-    results = analyzer.analyze_full_spectrum(test_file, mode='infrasound')
+    results = analyzer.analyze_full_spectrum(str(test_file), mode='infrasound')
     
     print(f"\nResults:")
     print(f"Total infrasound events: {results['total_events']}")
@@ -152,14 +156,16 @@ def example_3_rodent_detection():
     rodent_signal = rodent_call + noise
     
     # Save and analyze
-    test_file = '/home/claude/data/samples/rodent_vocalization.wav'
-    save_audio(rodent_signal, sample_rate, test_file)
+    test_dir = Path('data/samples')
+    test_dir.mkdir(parents=True, exist_ok=True)
+    test_file = test_dir / 'rodent_vocalization.wav'
+    save_audio(rodent_signal, sample_rate, str(test_file))
     
     print(f"\nGenerated rodent vocalization: {test_file}")
     print("Analyzing for ultrasound...")
     
     analyzer.sample_rate = sample_rate
-    results = analyzer.analyze_full_spectrum(test_file, mode='ultrasound')
+    results = analyzer.analyze_full_spectrum(str(test_file), mode='ultrasound')
     
     print(f"\nResults:")
     print(f"Total ultrasound events: {results['total_events']}")
@@ -239,7 +245,7 @@ def example_5_batch_analysis():
     
     # Create some test files first
     analyzer = AudioAnalyzer()
-    sample_dir = Path('/home/claude/data/samples')
+    sample_dir = Path('data/samples')
     sample_dir.mkdir(parents=True, exist_ok=True)
     
     print("\nGenerating test audio files...")
@@ -273,7 +279,7 @@ def example_5_batch_analysis():
     print("\nProcessing batch...")
     processor = BatchProcessor()
     
-    results_dir = '/home/claude/data/samples/batch_results'
+    results_dir = 'results/batch_results'
     processor.process_directory(
         str(sample_dir),
         results_dir,

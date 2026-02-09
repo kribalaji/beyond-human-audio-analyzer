@@ -3,7 +3,14 @@ Simple test script to verify installation
 """
 
 import sys
+import os
 from pathlib import Path
+
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    os.system('chcp 65001 > nul')
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
 
 print("=" * 70)
 print("TESTING BEYOND HUMAN PERCEPTION AUDIO ANALYZER")
@@ -13,37 +20,37 @@ print("=" * 70)
 print("\n1. Testing imports...")
 try:
     import numpy as np
-    print("   ✓ numpy")
+    print("   [OK] numpy")
 except ImportError as e:
-    print(f"   ✗ numpy: {e}")
+    print(f"   [FAIL] numpy: {e}")
     sys.exit(1)
 
 try:
     import scipy
-    print("   ✓ scipy")
+    print("   [OK] scipy")
 except ImportError as e:
-    print(f"   ✗ scipy: {e}")
+    print(f"   [FAIL] scipy: {e}")
     sys.exit(1)
 
 try:
     import librosa
-    print("   ✓ librosa")
+    print("   [OK] librosa")
 except ImportError as e:
-    print(f"   ✗ librosa: {e}")
+    print(f"   [FAIL] librosa: {e}")
     sys.exit(1)
 
 try:
     import soundfile
-    print("   ✓ soundfile")
+    print("   [OK] soundfile")
 except ImportError as e:
-    print(f"   ✗ soundfile: {e}")
+    print(f"   [FAIL] soundfile: {e}")
     sys.exit(1)
 
 try:
     import matplotlib
-    print("   ✓ matplotlib")
+    print("   [OK] matplotlib")
 except ImportError as e:
-    print(f"   ✗ matplotlib: {e}")
+    print(f"   [FAIL] matplotlib: {e}")
     sys.exit(1)
 
 # Test project imports
@@ -52,45 +59,45 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 try:
     from src.analyzer import AudioAnalyzer
-    print("   ✓ analyzer module")
+    print("   [OK] analyzer module")
 except ImportError as e:
-    print(f"   ✗ analyzer module: {e}")
+    print(f"   [FAIL] analyzer module: {e}")
     sys.exit(1)
 
 try:
     from src.utils import generate_test_signal
-    print("   ✓ utils module")
+    print("   [OK] utils module")
 except ImportError as e:
-    print(f"   ✗ utils module: {e}")
+    print(f"   [FAIL] utils module: {e}")
     sys.exit(1)
 
 # Test basic functionality
 print("\n3. Testing basic functionality...")
 try:
     analyzer = AudioAnalyzer()
-    print(f"   ✓ Analyzer initialized (sample rate: {analyzer.sample_rate} Hz)")
+    print(f"   [OK] Analyzer initialized (sample rate: {analyzer.sample_rate} Hz)")
 except Exception as e:
-    print(f"   ✗ Analyzer initialization failed: {e}")
+    print(f"   [FAIL] Analyzer initialization failed: {e}")
     sys.exit(1)
 
 try:
     test_signal = generate_test_signal(1000, 1.0, 48000)
-    print(f"   ✓ Signal generation ({len(test_signal)} samples)")
+    print(f"   [OK] Signal generation ({len(test_signal)} samples)")
 except Exception as e:
-    print(f"   ✗ Signal generation failed: {e}")
+    print(f"   [FAIL] Signal generation failed: {e}")
     sys.exit(1)
 
 # Test FFT computation
 print("\n4. Testing FFT computation...")
 try:
     frequencies, magnitudes = analyzer.compute_fft(test_signal)
-    print(f"   ✓ FFT computed ({len(frequencies)} frequency bins)")
+    print(f"   [OK] FFT computed ({len(frequencies)} frequency bins)")
 except Exception as e:
-    print(f"   ✗ FFT computation failed: {e}")
+    print(f"   [FAIL] FFT computation failed: {e}")
     sys.exit(1)
 
 print("\n" + "=" * 70)
-print("ALL TESTS PASSED! ✓")
+print("ALL TESTS PASSED!")
 print("=" * 70)
 print("\nYour installation is working correctly.")
 print("You can now run the analyzer:")

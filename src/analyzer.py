@@ -409,13 +409,15 @@ if __name__ == "__main__":
     combined_signal = infrasound_signal + ultrasound_signal + 0.05 * np.random.randn(len(t))
     
     # Save test signal
-    test_file = '/home/claude/test_signal.wav'
-    sf.write(test_file, combined_signal, analyzer.sample_rate)
+    test_dir = Path('data/samples')
+    test_dir.mkdir(parents=True, exist_ok=True)
+    test_file = test_dir / 'test_signal.wav'
+    sf.write(str(test_file), combined_signal, analyzer.sample_rate)
     print(f"Saved test signal to {test_file}")
     
     # Analyze
     print("\nAnalyzing test signal...")
-    results = analyzer.analyze_full_spectrum(test_file, mode='full')
+    results = analyzer.analyze_full_spectrum(str(test_file), mode='full')
     
     print(f"\nAnalysis Results:")
     print(f"Duration: {results['duration_seconds']:.2f} seconds")
