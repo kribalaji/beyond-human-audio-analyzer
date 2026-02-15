@@ -1,0 +1,12 @@
+[
+  {
+    "type": "infrasound",
+    "frequency_hz": 10.5,
+    "magnitude_db": -35.2
+  },
+  {
+    "type": "ultrasound",
+    "frequency_hz": 25000,
+    "magnitude_db": -42.1
+  }
+]

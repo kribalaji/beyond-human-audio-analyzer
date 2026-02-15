@@ -1,0 +1,314 @@
+[
+  {
+    "file": "test_batch_1.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 5.0,
+        "magnitude_db": 86.2150180613901,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 20594.0,
+        "magnitude_db": 33.37859005180917,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 25543.0,
+        "magnitude_db": 36.80716277269794,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 31534.0,
+        "magnitude_db": 35.64357257101014,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 36556.0,
+        "magnitude_db": 37.39519313710802,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 41709.0,
+        "magnitude_db": 36.41316661636181,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 46768.0,
+        "magnitude_db": 35.028760839630586,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 7,
+    "status": "success",
+    "error": null
+  },
+  {
+    "file": "test_batch_2.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 15.0,
+        "magnitude_db": 90.40817124253385,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 21994.0,
+        "magnitude_db": 36.343148954418176,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 26799.0,
+        "magnitude_db": 34.19194541008737,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 31793.0,
+        "magnitude_db": 36.340886024442675,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 37272.0,
+        "magnitude_db": 35.4959308870765,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 44087.0,
+        "magnitude_db": 37.183069559252026,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 6,
+    "status": "success",
+    "error": null
+  },
+  {
+    "file": "test_batch_3.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 12.0,
+        "magnitude_db": 32.692132138088326,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 23696.0,
+        "magnitude_db": 36.62297331094481,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 30000.0,
+        "magnitude_db": 89.47941130758323,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 38511.0,
+        "magnitude_db": 37.411471962126875,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 45299.0,
+        "magnitude_db": 36.184183713892644,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 5,
+    "status": "success",
+    "error": null
+  },
+  {
+    "file": "test_batch_1.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 5.0,
+        "magnitude_db": 86.2150180613901,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 20594.0,
+        "magnitude_db": 33.37859005180917,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 25543.0,
+        "magnitude_db": 36.80716277269794,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 31534.0,
+        "magnitude_db": 35.64357257101014,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 36556.0,
+        "magnitude_db": 37.39519313710802,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 41709.0,
+        "magnitude_db": 36.41316661636181,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 46768.0,
+        "magnitude_db": 35.028760839630586,
+        "file": "test_batch_1.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 7,
+    "status": "success",
+    "error": null
+  },
+  {
+    "file": "test_batch_2.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 15.0,
+        "magnitude_db": 90.40817124253385,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 21994.0,
+        "magnitude_db": 36.343148954418176,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 26799.0,
+        "magnitude_db": 34.19194541008737,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 31793.0,
+        "magnitude_db": 36.340886024442675,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 37272.0,
+        "magnitude_db": 35.4959308870765,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 44087.0,
+        "magnitude_db": 37.183069559252026,
+        "file": "test_batch_2.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 6,
+    "status": "success",
+    "error": null
+  },
+  {
+    "file": "test_batch_3.wav",
+    "duration_seconds": 1.0,
+    "sample_rate": 96000,
+    "events": [
+      {
+        "type": "infrasound",
+        "frequency_hz": 12.0,
+        "magnitude_db": 32.692132138088326,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 23696.0,
+        "magnitude_db": 36.62297331094481,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 30000.0,
+        "magnitude_db": 89.47941130758323,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 38511.0,
+        "magnitude_db": 37.411471962126875,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      },
+      {
+        "type": "ultrasound",
+        "frequency_hz": 45299.0,
+        "magnitude_db": 36.184183713892644,
+        "file": "test_batch_3.wav",
+        "timestamp": null
+      }
+    ],
+    "total_events": 5,
+    "status": "success",
+    "error": null
+  }
+]

@@ -1,0 +1,102 @@
+======================================================================
+AUDIO ANALYSIS SUMMARY REPORT
+Beyond Human Perception Detection
+======================================================================
+
+Generated: 2026-02-09 21:58:15
+
+OVERALL STATISTICS
+----------------------------------------------------------------------
+Total files processed: 6
+  Successful: 6
+  Failed: 0
+
+Total events detected: 36
+  Infrasound events (<20Hz): 6
+  Ultrasound events (>20kHz): 30
+
+
+PER-FILE RESULTS
+----------------------------------------------------------------------
+
+File: test_batch_1.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 7
+  Events:
+    - INFRASOUND: 5.00 Hz @ 86.2 dB
+    - ULTRASOUND: 20594.00 Hz @ 33.4 dB
+    - ULTRASOUND: 25543.00 Hz @ 36.8 dB
+    - ULTRASOUND: 31534.00 Hz @ 35.6 dB
+    - ULTRASOUND: 36556.00 Hz @ 37.4 dB
+    - ULTRASOUND: 41709.00 Hz @ 36.4 dB
+    - ULTRASOUND: 46768.00 Hz @ 35.0 dB
+
+File: test_batch_2.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 6
+  Events:
+    - INFRASOUND: 15.00 Hz @ 90.4 dB
+    - ULTRASOUND: 21994.00 Hz @ 36.3 dB
+    - ULTRASOUND: 26799.00 Hz @ 34.2 dB
+    - ULTRASOUND: 31793.00 Hz @ 36.3 dB
+    - ULTRASOUND: 37272.00 Hz @ 35.5 dB
+    - ULTRASOUND: 44087.00 Hz @ 37.2 dB
+
+File: test_batch_3.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 5
+  Events:
+    - INFRASOUND: 12.00 Hz @ 32.7 dB
+    - ULTRASOUND: 23696.00 Hz @ 36.6 dB
+    - ULTRASOUND: 30000.00 Hz @ 89.5 dB
+    - ULTRASOUND: 38511.00 Hz @ 37.4 dB
+    - ULTRASOUND: 45299.00 Hz @ 36.2 dB
+
+File: test_batch_1.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 7
+  Events:
+    - INFRASOUND: 5.00 Hz @ 86.2 dB
+    - ULTRASOUND: 20594.00 Hz @ 33.4 dB
+    - ULTRASOUND: 25543.00 Hz @ 36.8 dB
+    - ULTRASOUND: 31534.00 Hz @ 35.6 dB
+    - ULTRASOUND: 36556.00 Hz @ 37.4 dB
+    - ULTRASOUND: 41709.00 Hz @ 36.4 dB
+    - ULTRASOUND: 46768.00 Hz @ 35.0 dB
+
+File: test_batch_2.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 6
+  Events:
+    - INFRASOUND: 15.00 Hz @ 90.4 dB
+    - ULTRASOUND: 21994.00 Hz @ 36.3 dB
+    - ULTRASOUND: 26799.00 Hz @ 34.2 dB
+    - ULTRASOUND: 31793.00 Hz @ 36.3 dB
+    - ULTRASOUND: 37272.00 Hz @ 35.5 dB
+    - ULTRASOUND: 44087.00 Hz @ 37.2 dB
+
+File: test_batch_3.wav
+  Status: success
+  Duration: 1.00 seconds
+  Sample Rate: 96000 Hz
+  Events detected: 5
+  Events:
+    - INFRASOUND: 12.00 Hz @ 32.7 dB
+    - ULTRASOUND: 23696.00 Hz @ 36.6 dB
+    - ULTRASOUND: 30000.00 Hz @ 89.5 dB
+    - ULTRASOUND: 38511.00 Hz @ 37.4 dB
+    - ULTRASOUND: 45299.00 Hz @ 36.2 dB
+
+======================================================================
+END OF REPORT
+======================================================================

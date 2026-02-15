@@ -8,7 +8,6 @@ sounddevice>=0.4.6
 
 # Signal Processing & Analysis
 pywavelets>=1.4.0
-python-acoustics>=0.2.6
 resampy>=0.4.2
 
 # Visualization
@@ -16,10 +15,10 @@ matplotlib>=3.7.0
 seaborn>=0.12.0
 plotly>=5.14.0
 
-# Machine Learning
+# Machine Learning (Optional - comment out if not needed)
+# tensorflow>=2.13.0
+# keras>=2.13.0
 scikit-learn>=1.3.0
-tensorflow>=2.13.0
-keras>=2.13.0
 
 # Data Handling
 pandas>=2.0.0
@@ -31,9 +30,9 @@ click>=8.1.0
 tqdm>=4.65.0
 colorama>=0.4.6
 
-# Optional: Computer Vision Integration
-opencv-python>=4.8.0
-pillow>=10.0.0
+# Optional: Computer Vision Integration (comment out if not needed)
+# opencv-python>=4.8.0
+# pillow>=10.0.0
 
 # Testing
 pytest>=7.4.0
