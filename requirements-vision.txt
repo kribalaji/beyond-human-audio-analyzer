@@ -1,0 +1,19 @@
+# Vision Analysis Requirements
+# Additional packages for beyond-human vision capabilities
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+pillow>=10.0.0
+
+# Image Processing
+scikit-image>=0.21.0
+imageio>=2.31.0
+
+# AI/Deep Learning (Optional - uncomment if needed)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# tensorflow>=2.13.0
+
+# Advanced Analysis
+imutils>=0.5.4

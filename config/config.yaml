@@ -139,3 +139,45 @@ advanced:
   # Calibration
   calibration_file: null  # Path to calibration data
   apply_calibration: false
+
+
+# Vision Analysis Configuration
+vision:
+  # Image/Video Settings
+  input_formats: ['jpg', 'png', 'bmp', 'tiff', 'mp4', 'avi']
+  output_format: 'png'
+  
+  # Spectral Detection
+  spectral:
+    infrared:
+      enabled: true
+      threshold: 200  # Intensity threshold
+      min_area: 50    # Minimum hotspot area
+    ultraviolet:
+      enabled: true
+      threshold: 180
+      min_area: 30
+    
+  # Motion Analysis
+  motion:
+    enabled: true
+    fps_threshold: 120  # Minimum FPS for high-speed analysis
+    motion_threshold: 1000  # Pixels
+    
+  # AI Detection
+  ai_detection:
+    enabled: true
+    thermal_anomaly_threshold: 0.7
+    light_source_confidence: 0.85
+    blur_threshold: 100
+    
+  # False Color Visualization
+  false_color:
+    thermal_colormap: 'jet'
+    uv_colormap: 'cool'
+    ir_colormap: 'hot'
+    
+  # Output
+  save_visualizations: true
+  save_path: 'results/vision/'
+  include_annotations: true

@@ -1,0 +1,422 @@
+{
+  "summary": {
+    "total_images": 19,
+    "total_videos": 4
+  },
+  "images": [
+    {
+      "filename": "aurora.png",
+      "size": "800x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "64.4",
+          "green_mean": "129.2",
+          "blue_mean": "0.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "0.9"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 4800
+        }
+      }
+    },
+    {
+      "filename": "black_hole.png",
+      "size": "600x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "30.3",
+          "green_mean": "15.1",
+          "blue_mean": "10.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "4725.8"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3600
+        }
+      }
+    },
+    {
+      "filename": "building_thermal.png",
+      "size": "800x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "47.3",
+          "green_mean": "47.3",
+          "blue_mean": "47.3",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "123.0"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 4800
+        }
+      }
+    },
+    {
+      "filename": "bullet_motion.png",
+      "size": "800x400",
+      "analyses": {
+        "spectral": {
+          "red_mean": "3.9",
+          "green_mean": "3.9",
+          "blue_mean": "3.9",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "12.0"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3199
+        }
+      }
+    },
+    {
+      "filename": "cells_uv.png",
+      "size": "800x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "32.7",
+          "green_mean": "17.2",
+          "blue_mean": "36.9",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "15.5"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 4800
+        }
+      }
+    },
+    {
+      "filename": "ir_space.png",
+      "size": "700x500",
+      "analyses": {
+        "spectral": {
+          "red_mean": "16.7",
+          "green_mean": "16.7",
+          "blue_mean": "16.7",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "272.9"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3500
+        }
+      }
+    },
+    {
+      "filename": "motion_blur.png",
+      "size": "600x400",
+      "analyses": {
+        "spectral": {
+          "red_mean": "17.4",
+          "green_mean": "17.4",
+          "blue_mean": "17.4",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "103.5"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 2400
+        }
+      }
+    },
+    {
+      "filename": "nebula_uv.png",
+      "size": "800x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "34.6",
+          "green_mean": "17.2",
+          "blue_mean": "11.4",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "0.7"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 4799
+        }
+      }
+    },
+    {
+      "filename": "space_stars.png",
+      "size": "800x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "14.4",
+          "green_mean": "16.2",
+          "blue_mean": "18.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "1235.3"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 4800
+        }
+      }
+    },
+    {
+      "filename": "spectral_bands.png",
+      "size": "600x400",
+      "analyses": {
+        "spectral": {
+          "red_mean": "106.2",
+          "green_mean": "106.2",
+          "blue_mean": "170.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "84.2"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 2398
+        }
+      }
+    },
+    {
+      "filename": "spectral_test.png",
+      "size": "640x480",
+      "analyses": {
+        "spectral": {
+          "red_mean": "125.3",
+          "green_mean": "112.9",
+          "blue_mean": "129.7",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "42927.1"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3072
+        }
+      }
+    },
+    {
+      "filename": "spiral_galaxy.png",
+      "size": "600x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "4.0",
+          "green_mean": "4.0",
+          "blue_mean": "4.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "0.9"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3600
+        }
+      }
+    },
+    {
+      "filename": "supernova.png",
+      "size": "500x500",
+      "analyses": {
+        "spectral": {
+          "red_mean": "19.3",
+          "green_mean": "42.5",
+          "blue_mean": "63.2",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "1.9"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 2500
+        }
+      }
+    },
+    {
+      "filename": "thermal.png",
+      "size": "400x300",
+      "analyses": {
+        "spectral": {
+          "red_mean": "15.8",
+          "green_mean": "15.8",
+          "blue_mean": "15.8",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "887.3"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 1200
+        }
+      }
+    },
+    {
+      "filename": "thermal_test.png",
+      "size": "640x480",
+      "analyses": {
+        "spectral": {
+          "red_mean": "28.0",
+          "green_mean": "28.0",
+          "blue_mean": "28.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "269.0"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3072
+        }
+      }
+    },
+    {
+      "filename": "uv_test.png",
+      "size": "640x480",
+      "analyses": {
+        "spectral": {
+          "red_mean": "10.5",
+          "green_mean": "21.0",
+          "blue_mean": "49.2",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "145.9"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3072
+        }
+      }
+    },
+    {
+      "filename": "vegetation_ndvi.png",
+      "size": "500x500",
+      "analyses": {
+        "spectral": {
+          "red_mean": "50.0",
+          "green_mean": "125.0",
+          "blue_mean": "100.0",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": true,
+          "score": "1.3"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 2500
+        }
+      }
+    },
+    {
+      "filename": "water_splash.png",
+      "size": "600x600",
+      "analyses": {
+        "spectral": {
+          "red_mean": "7.4",
+          "green_mean": "5.3",
+          "blue_mean": "5.3",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "539.5"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3600
+        }
+      }
+    },
+    {
+      "filename": "wildlife_thermal.png",
+      "size": "700x500",
+      "analyses": {
+        "spectral": {
+          "red_mean": "56.3",
+          "green_mean": "56.3",
+          "blue_mean": "56.3",
+          "anomalies": []
+        },
+        "blur": {
+          "is_blurred": false,
+          "score": "183.4"
+        },
+        "patterns": {
+          "detected": true,
+          "count": 3499
+        }
+      }
+    }
+  ],
+  "videos": [
+    {
+      "filename": "highspeed_motion.mp4",
+      "resolution": "640x480",
+      "fps": "60.0",
+      "frames": 180,
+      "duration": "3.00s",
+      "first_frame_blur": "110.0"
+    },
+    {
+      "filename": "pulsating_light.mp4",
+      "resolution": "500x500",
+      "fps": "30.0",
+      "frames": 90,
+      "duration": "3.00s",
+      "first_frame_blur": "193.6"
+    },
+    {
+      "filename": "thermal_gradient.mp4",
+      "resolution": "600x400",
+      "fps": "30.0",
+      "frames": 120,
+      "duration": "4.00s",
+      "first_frame_blur": "331.0"
+    },
+    {
+      "filename": "thermal_rotation.mp4",
+      "resolution": "400x400",
+      "fps": "30.0",
+      "frames": 120,
+      "duration": "4.00s",
+      "first_frame_blur": "564.1"
+    }
+  ]
+}
