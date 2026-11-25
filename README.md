@@ -29,7 +29,7 @@ A comprehensive Python toolkit for analyzing and detecting sounds beyond human h
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/kribalaji/beyond-human-audio-analyzer.git
 cd beyond-human-audio-analyzer
 
 # Create virtual environment
@@ -153,9 +153,18 @@ monitor.start(
 - Apply stricter filters
 - Use ML-based detection for better accuracy
 
+## Documentation
+
+- [Quick start](docs/QUICKSTART.md)
+- [Getting started](docs/GETTING_STARTED.md)
+- [Testing](docs/TESTING.md)
+- [Vision analysis guide](docs/VISION_GUIDE.md)
+- [Project status](docs/PROJECT_STATUS.md)
+- Design and analysis notes: [summary](docs/PROJECT_SUMMARY.md), [analysis](docs/ANALYSIS_SUMMARY.md)
+
 ## Contributing
 
-Contributions welcome! Please read CONTRIBUTING.md for guidelines.
+Contributions are welcome. Please open an issue to discuss a change before sending a pull request.
 
 ## License
 
@@ -166,7 +175,7 @@ MIT License - See LICENSE file for details
 If you use this project in research, please cite:
 ```
 Beyond Human Perception Audio Analyzer (2026)
-https://github.com/yourusername/beyond-human-audio-analyzer
+https://github.com/kribalaji/beyond-human-audio-analyzer
 ```
 
 ## References
